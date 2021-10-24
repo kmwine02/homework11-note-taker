@@ -37,7 +37,7 @@ Homework 11 - Note Taker
 
   ## Links
   The application can be found here: https://kmwine02-homework11-note-taker.herokuapp.com/
-  The repo can be found here: https://github.com/kmwine02/homework10-team-profile-generator 
+  The repo can be found here: https://github.com/kmwine02/homework11-note-taker
 
   ## Pictures
   View of the homepage of the application:

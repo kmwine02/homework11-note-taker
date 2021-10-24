@@ -1,22 +1,7 @@
 [
     {
-        "title": "Adding another note",
-        "text": "more notes",
-        "note_id": "f3d45a00-923e-4a1e-b6c6-650e1e670e45"
-    },
-    {
-        "title": "Nal",
-        "text": "aaaaa",
-        "note_id": "4bff00da-5dfc-4e4b-8c9d-38947631cfbf"
-    },
-    {
-        "title": "katie",
-        "text": "katie",
-        "note_id": "18b892bd-d09c-49cc-9107-fd1439dc7500"
-    },
-    {
-        "title": "Note1",
-        "text": "additional notes",
-        "note_id": "3e3120c3-8bf2-4116-b4b0-2162a0128b3e"
+        "title": "note1",
+        "text": "note1",
+        "id": "b16d4e5c-9411-4a56-9592-2d56fcbddc96"
     }
 ]

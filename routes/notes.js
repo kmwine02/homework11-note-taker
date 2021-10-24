@@ -20,7 +20,7 @@ notes.post("/notes", (req, res) => {
        const newNote = {
            title,
            text,
-           note_id:  uuidv4(),
+           id:  uuidv4(),
        }
 
        fsUtils.readAndAppend(newNote, './db/db.json');
@@ -30,14 +30,15 @@ notes.post("/notes", (req, res) => {
    }
 });
 
-notes.delete("/notes/:note_id", (req, res) => {
-    const noteID = req.params.note_id;
-    console.log(req.params.note_id);
+// deletes the note based on the note id 
+notes.delete("/notes/:id", (req, res) => {
+    const noteID = req.params.id;
+    console.log(req.params.id);
     fsUtils.readFromFile('./db/db.json')
     .then((data) => JSON.parse(data))
     .then((json) => {
       // Make a new array of all tips except the one with the ID provided in the URL
-      const result = json.filter((note) => note.note_id !== noteID);
+      const result = json.filter((note) => note.id !== noteID);
 
       // Save that array to the filesystem
       fsUtils.writeToFile('./db/db.json', result);

@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/kmwine02/homework11-note-taker#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "uuidv4": "^6.2.12"
   }
 }

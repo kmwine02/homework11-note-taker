@@ -30,8 +30,21 @@ notes.post("/notes", (req, res) => {
    }
 });
 
-// notes.get("/notes/:note_id", (req, res) => {
+notes.delete("/notes/:note_id", (req, res) => {
+    const noteID = req.params.note_id;
+    console.log(req.params.note_id);
+    fsUtils.readFromFile('./db/db.json')
+    .then((data) => JSON.parse(data))
+    .then((json) => {
+      // Make a new array of all tips except the one with the ID provided in the URL
+      const result = json.filter((note) => note.note_id !== noteID);
 
-// })
+      // Save that array to the filesystem
+      fsUtils.writeToFile('./db/db.json', result);
+
+      // Respond to the DELETE request
+      res.json(`Item ${noteID} has been deleted 🗑️`);
+    });
+})
 
 module.exports = notes;

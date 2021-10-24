@@ -1,10 +1,5 @@
 [
     {
-        "title": "Adding new notes",
-        "text": "another new note",
-        "note_id": "de170838-6581-4280-85bb-b31b8ae74dbd"
-    },
-    {
         "title": "Adding another note",
         "text": "more notes",
         "note_id": "f3d45a00-923e-4a1e-b6c6-650e1e670e45"
@@ -15,13 +10,13 @@
         "note_id": "4bff00da-5dfc-4e4b-8c9d-38947631cfbf"
     },
     {
-        "title": "grace",
-        "text": "note for grace",
-        "note_id": "2344f423-a886-4bfc-b65c-2c35fb4367fc"
-    },
-    {
         "title": "katie",
         "text": "katie",
         "note_id": "18b892bd-d09c-49cc-9107-fd1439dc7500"
+    },
+    {
+        "title": "Note1",
+        "text": "additional notes",
+        "note_id": "3e3120c3-8bf2-4116-b4b0-2162a0128b3e"
     }
 ]
